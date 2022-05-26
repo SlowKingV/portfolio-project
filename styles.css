@@ -55,6 +55,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  cursor: pointer;
 }
 
 .menu-icon > div {
@@ -76,11 +77,19 @@ header {
   margin: 0.2em 0;
   padding: 0;
   display: flex;
-  color: #505f79;
 }
 
 .social-links > li {
   padding-right: 0.7em;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #505f79;
+}
+
+.social-links a:hover {
+  color: #7f8cff;
 }
 
 @media (max-width: 500px) {
