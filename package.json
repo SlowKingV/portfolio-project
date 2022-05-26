@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/SlowKingV/portfolio-project/issues"
   },
-  "homepage": "https://github.com/SlowKingV/portfolio-project#readme"
+  "homepage": "https://github.com/SlowKingV/portfolio-project#readme",
+  "devDependencies": {
+    "hint": "^6.2.0"
+  }
 }
