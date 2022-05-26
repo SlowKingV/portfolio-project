@@ -6,6 +6,7 @@ body {
   font-size: 24px;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  background-color: #E5E5E5;
 }
 
 h1 {
@@ -25,7 +26,8 @@ p {
 
 main {
   padding: 0 30px;
-  position: relative;
+  background-color: #fff;
+  border-bottom-left-radius: 100px;
 }
 
 #head-bar {
