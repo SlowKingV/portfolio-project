@@ -119,8 +119,13 @@ article {
   border-radius: 20px;
 }
 
-article > img {
+article img {
   width: 100%;
+}
+
+article h2 a {
+  text-decoration: none;
+  color: unset;
 }
 
 .info {
@@ -131,12 +136,17 @@ article > img {
   font-weight: 600;
 }
 
-.info * {
+.info a {
   color: #7A869A;
+  text-decoration: none;
 }
 
-.info span:first-child {
+.info span:first-child a {
   color: #344563;
+}
+
+.info a:hover {
+  text-decoration: underline;
 }
 
 .info .dot {
@@ -160,7 +170,15 @@ article > img {
   background-color: #ebebff;
   border-radius: 0.5em;
   margin-right: 0.5em;
+}
+
+.tags a {
   color: #6070ff;
+  text-decoration: none;
+}
+
+.tags a:hover {
+  text-decoration: underline;
 }
 
 .btn-more {
@@ -173,6 +191,12 @@ article > img {
   color: #396df2;
   padding: 0.6em 0.6em;
   margin: 1em 0;
+  cursor: pointer;
+}
+
+.btn-more:hover {
+  background-color: #396df2;
+  color: #fff;
 }
 
 .about-myself {
