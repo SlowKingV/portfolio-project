@@ -21,6 +21,7 @@ h1 {
 h2 {
   font-size: 2rem;
   margin: 0.4rem 0;
+  color: #172b4d;
 }
 
 h3 {
@@ -162,7 +163,7 @@ article > img {
   color: #6070ff;
 }
 
-.btn-expand {
+.btn-more {
   background-color: #fff;
   border: 2px solid #396df2;
   font-family: 'Poppins', sans-serif;
@@ -174,7 +175,70 @@ article > img {
   margin: 1em 0;
 }
 
+.about-myself {
+  background-color: #fff;
+  padding: 7rem 30px 7rem 30px;
+  border-top-right-radius: 100px;
+}
+
+.about-myself .social-links {
+  margin-top: 0.8em;
+}
+
+.categories {
+  list-style: none;
+  padding: 0;
+}
+
+.categories > li {
+  display: flex;
+  font-size: 1.2em;
+  justify-content: space-between;
+  font-weight: 500;
+  padding: 1em 0.5em;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.categories > li:not(:first-child) {
+  border-bottom: 2px solid #dfe1e6;
+}
+
+.categories i {
+  color: #666666;
+}
+
+.languages-list {
+  list-style: none;
+  padding: 0;
+  flex: 0 0 100%;
+}
+
+.languages-list li {
+  background-color: #f7f7f9;
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  color: #253858;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.languages-list img {
+  width: 2.5em;
+  margin-right: 1em;
+}
+
 @media (max-width: 500px) {
-  body { font-size: 20px; }
-  h1 { font-size: 2.4em; }
+  html { font-size: 20px; }
+  h1 { font-size: 2.2rem; }
+  .info {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info .dot { display: none; }
 }
