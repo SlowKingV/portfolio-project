@@ -51,7 +51,8 @@ header {
   font-size: 24px;
 }
 
-header > span {
+header a {
+  text-decoration: none;
   font-weight: 700;
   color: #6070ff;
 }
