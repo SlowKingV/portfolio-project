@@ -2,7 +2,7 @@
 
 # Portfolio: Setup and mobile version skeleton
 
-> First part of a web portfolio project. We are required to set up a new repository and prepare it for development using best practices (e.g. linters) and build the first 2 sections of the mobile website using the template we chose.
+> Web portfolio project. We are required to set up a new repository and prepare it for development using best practices (e.g. linters) and build the mobile website using the template we chose.
 
 
 ## Built With
@@ -11,10 +11,8 @@
 - (Used Lighthouse, Webhint, and Stylelint as linters)
 
 ### Run tests
-If you wish to check the linters on your own, you are going to have to install any you need (or all) of the follow:
-- [Lighthouse](https://developers.google.com/web/tools/lighthouse)
-- [Webhint](https://webhint.io/)
-- [Stylelint](https://stylelint.io/)
+To check the linter on your local env, run `npm install .` on the root project's directory.
+Then copy and paste the following files in the same place: [.hintrc](https://github.com/microverseinc/linters-config/blob/master/html-css/.hintrc) and [.stylelintrc.json](https://github.com/microverseinc/linters-config/blob/master/html-css/.stylelintrc.json).
 
 ## Author
 
