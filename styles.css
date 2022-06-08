@@ -211,7 +211,7 @@ header {
 
 .about-myself {
   background-color: #fff;
-  padding: 7rem 30px 7rem 30px;
+  padding: 7rem 30px 14rem 30px;
   border-top-right-radius: 100px;
 }
 
@@ -263,6 +263,28 @@ header {
 .languages-list img {
   width: 2.5em;
   margin-right: 1em;
+}
+
+.contact {
+  background-color: #6070ff;
+  padding: 7rem 30px 7rem 30px;
+  text-align: center;
+  border-top-left-radius: 100px;
+  position: relative;
+  top: -7rem;
+}
+
+.form-title, .form-text {
+  color: #fff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-submit {
+  align-self: flex-start;
 }
 
 @media (max-width: 500px) {
