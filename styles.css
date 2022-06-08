@@ -281,10 +281,28 @@ header {
 .contact-form {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.input {
+  margin-bottom: 2em;
+  padding: 0.8em;
+  border-radius: 0.5em;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+.input::placeholder {
+  color: #b3bab5;
 }
 
 .contact-submit {
   align-self: flex-start;
+  color:#6070ff;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #fff;
 }
 
 @media (max-width: 500px) {
