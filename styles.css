@@ -277,10 +277,10 @@ header {
   background-size: auto 95%;
   background-position: right top;
   box-shadow: 0 7rem 0 #6070ff;
-
 }
 
-.form-title, .form-text {
+.form-title,
+.form-text {
   color: #fff;
 }
 
@@ -305,7 +305,7 @@ header {
 
 .contact-submit {
   align-self: flex-start;
-  color:#6070ff;
+  color: #6070ff;
   border-radius: 0.5em;
   border: none;
   background-color: #fff;
