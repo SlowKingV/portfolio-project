@@ -272,6 +272,10 @@ header {
   border-top-left-radius: 100px;
   position: relative;
   top: -7rem;
+  background-image: url('assets/backgroundform.png');
+  background-size: cover;
+  background-position: right top;
+
 }
 
 .form-title, .form-text {
