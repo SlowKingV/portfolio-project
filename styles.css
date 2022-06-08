@@ -220,6 +220,7 @@ header {
   padding: 0.6em 0.6em;
   margin: 1em 0;
   cursor: pointer;
+  transition: background-color 2s;
 }
 
 .btn-more:hover {
