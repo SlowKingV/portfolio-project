@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: Setup and mobile version skeleton
+# Portfolio: Add a contact form and finish the mobile version
 
 > Web portfolio project. We are required to set up a new repository and prepare it for development using best practices (e.g. linters) and build the mobile website using the template we chose.
 
@@ -21,6 +21,12 @@ Then copy and paste the following files in the same place: [.hintrc](https://git
 - GitHub: [@SlowKingV](https://github.com/SlowKingV)
 - Twitter: [@SlowKingVI](https://twitter.com/SlowKingVI)
 - LinkedIn: [Diego Luna Granados](https://www.linkedin.com/in/diego-luna-granados/)
+
+👤 **Maria Amalia Gomez Moro**
+
+- GitHub: [@AmaliaGM](https://github.com/AmaliaGM)
+- Twitter: [@AmaliaGomezMoro](https://twitter.com/AmaliaGomezMoro)
+- LinkedIn: [MariaAmaliaGomezMoro](https://www.linkedin.com/in/maria-amalia-gomez-moro-7047a6114/)
 
 ## 🤝 Contributing
 
