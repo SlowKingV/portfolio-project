@@ -273,8 +273,10 @@ header {
   position: relative;
   top: -7rem;
   background-image: url('assets/backgroundform.png');
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto 95%;
   background-position: right top;
+  box-shadow: 0 7rem 0 #6070ff;
 
 }
 
