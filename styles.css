@@ -329,6 +329,11 @@ header {
   border: none;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
+  transition: transform 0.2s;
+}
+
+.input:hover::placeholder {
+  transform:translateX(5px);
 }
 
 .input::placeholder {
