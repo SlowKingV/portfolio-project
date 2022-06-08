@@ -98,8 +98,8 @@ header {
   background-color: #fff;
   background-image: url('/assets/header-shapes-mobile.png');
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-size: 100%;
+  background-position: center 3em;
   border-bottom-left-radius: 100px;
 }
 
