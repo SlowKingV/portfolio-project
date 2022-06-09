@@ -361,5 +361,70 @@ header {
     background-image: url('/assets/desktop/header_bg@2x.png');
     background-size: contain;
     background-position: center;
+    justify-content: flex-end;
+  }
+
+  .wrapper {
+    margin-bottom: 20vh;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card:nth-child(even) .card-content {
+    order: -1;
+  }
+
+  .card > * {
+    max-width: 47.5%;
+    flex: 1;
+  }
+
+  .about-myself {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-myself > * {
+    max-width: 48%;
+    flex: 1;
+  }
+
+  .languages-list {
+    display: flex;
+  }
+
+  .languages-list > li {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 1em;
+    width: 87px;
+    height: 87px;
+  }
+
+  .languages-list .text {
+    flex: 1 0;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .contact {
+    background-image: url('/assets/desktop/contact_form_shapes@2x.png');
+    background-size: contain;
+    background-position: center;
+  }
+
+  .form-text {
+    max-width: 552px;
+    margin: 1em auto;
+  }
+
+  .contact-form {
+    max-width: 666px;
+    margin: 0 auto;
   }
 }
