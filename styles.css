@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 html {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 body {
@@ -13,13 +13,13 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #172b4d;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0.4rem 0;
   color: #172b4d;
 }
@@ -215,7 +215,7 @@ header {
 
 .about-myself {
   background-color: #fff;
-  padding: 7rem 30px 14rem 30px;
+  padding: 7rem 30px 9rem 30px;
   border-top-right-radius: 100px;
 }
 
@@ -275,12 +275,12 @@ header {
   text-align: center;
   border-top-left-radius: 100px;
   position: relative;
-  top: -7rem;
+  top: -100px;
   background-image: url('assets/backgroundform.png');
   background-repeat: no-repeat;
   background-size: auto 95%;
   background-position: right top;
-  box-shadow: 0 7rem 0 #6070ff;
+  box-shadow: 0 100px 0 #6070ff;
 }
 
 .form-title,
@@ -315,15 +315,10 @@ header {
   background-color: #fff;
 }
 
-@media (max-width: 500px) {
-  html { font-size: 20px; }
-  h1 { font-size: 2.2rem; }
-
+@media (max-width: 400px) {
   .info {
-    flex-wrap: nowrap;
     flex-direction: column;
     align-items: flex-start;
   }
-
-  .info .dot { display: none; }
+  .dot { display: none; }
 }
