@@ -36,6 +36,12 @@ header a {
   color: #6070ff;
 }
 
+.no-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .emphasize > a {
   text-decoration: none;
   color: #7f8cff;
@@ -74,6 +80,10 @@ header {
   font-size: 24px;
 }
 
+.logo {
+  font-size: 1rem;
+}
+
 .menu-icon {
   width: 1em;
   height: 1em;
@@ -89,6 +99,14 @@ header {
   background-color: #6070ff;
 }
 
+.menu-item {
+  display: none;
+  color: #344563;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 2em;
+}
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -101,6 +119,13 @@ header {
   background-size: 100%;
   background-position: center 3em;
   border-bottom-left-radius: 100px;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .tags a:hover {
@@ -321,4 +346,20 @@ header {
     align-items: flex-start;
   }
   .dot { display: none; }
+}
+
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .menu-item {
+    display: inline;
+  }
+
+  .headline {
+    background-image: url('/assets/desktop/header_bg@2x.png');
+    background-size: contain;
+    background-position: center;
+  }
 }
