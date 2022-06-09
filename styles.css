@@ -81,7 +81,10 @@ header {
 }
 
 .logo {
+  display: block;
   font-size: 1rem;
+  animation: rotate 2s;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
 .menu-icon {
@@ -338,6 +341,16 @@ header {
   border-radius: 0.5em;
   border: none;
   background-color: #fff;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 400px) {
