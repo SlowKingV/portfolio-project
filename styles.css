@@ -47,10 +47,6 @@ header a {
   color: #7f8cff;
 }
 
-.tags {
-  color: #6070ff;
-}
-
 .social-links a {
   color: #505f79;
 }
@@ -205,6 +201,7 @@ header {
   display: flex;
   font-size: 0.75em;
   font-weight: 500;
+  color: #6070ff;
 }
 
 .tags li {
