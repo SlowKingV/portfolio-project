@@ -11,7 +11,7 @@
 - (Used Lighthouse, Webhint, and Stylelint as linters)
 
 ## Live Demo
-You can check a live working version of this project here: https://slowkingv.github.io/portfolio-project/
+You can check a live working version of this project here: [live-demo](https://slowkingv.github.io/portfolio-project/)
 
 ### Run tests
 To check the linter on your local env, run `npm install .` on the root project's directory.
