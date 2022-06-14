@@ -10,6 +10,9 @@
 - HTML, CSS
 - (Used Lighthouse, Webhint, and Stylelint as linters)
 
+## Live Demo
+You can check a live working version of this project here: https://slowkingv.github.io/portfolio-project/
+
 ### Run tests
 To check the linter on your local env, run `npm install .` on the root project's directory.
 Then copy and paste the following files in the same place: [.hintrc](https://github.com/microverseinc/linters-config/blob/master/html-css/.hintrc) and [.stylelintrc.json](https://github.com/microverseinc/linters-config/blob/master/html-css/.stylelintrc.json).
