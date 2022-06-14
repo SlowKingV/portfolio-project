@@ -25,11 +25,19 @@ Then copy and paste the following files in the same place: [.hintrc](https://git
 - Twitter: [@SlowKingVI](https://twitter.com/SlowKingVI)
 - LinkedIn: [Diego Luna Granados](https://www.linkedin.com/in/diego-luna-granados/)
 
-👤 **Maria Amalia Gomez Moro**
+### Collaborators
+
+👤 **Maria Amalia Gomez Moro** *(Week 2: Animations & contact form)*
 
 - GitHub: [@AmaliaGM](https://github.com/AmaliaGM)
 - Twitter: [@AmaliaGomezMoro](https://twitter.com/AmaliaGomezMoro)
 - LinkedIn: [MariaAmaliaGomezMoro](https://www.linkedin.com/in/maria-amalia-gomez-moro-7047a6114/)
+
+👤 **Cindy Melisa Dorantes Sánchez** *(Week 3: Accessibility)*
+
+- GitHub: [@CindyDorantes](https://github.com/CindyDorantes)
+- Twitter: [@CindyDorantes10](https://twitter.com/CindyDorantes10)
+- LinkedIn: [Cindy Melisa Dorantes Sánchez](https://www.linkedin.com/in/cindydorantessanchez/)
 
 ## 🤝 Contributing
 
