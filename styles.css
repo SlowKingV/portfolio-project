@@ -47,9 +47,8 @@ header a {
   color: #7f8cff;
 }
 
-.tags a {
+.tags {
   color: #6070ff;
-  text-decoration: none;
 }
 
 .social-links a {
