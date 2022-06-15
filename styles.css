@@ -47,11 +47,6 @@ header a {
   color: #7f8cff;
 }
 
-.tags a {
-  color: #6070ff;
-  text-decoration: none;
-}
-
 .social-links a {
   color: #505f79;
 }
@@ -120,7 +115,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 30px;
   background-color: #fff;
   background-image: url('./assets/mobile/header-shapes-mobile.png');
@@ -206,6 +201,7 @@ header {
   display: flex;
   font-size: 0.75em;
   font-weight: 500;
+  color: #6070ff;
 }
 
 .tags li {
@@ -253,7 +249,7 @@ header {
 
 .about-myself {
   background-color: #fff;
-  padding: 7rem 30px 9rem 30px;
+  padding: 7rem 30px 7rem 30px;
   border-top-right-radius: 100px;
 }
 
@@ -309,16 +305,14 @@ header {
 
 .contact {
   background-color: #6070ff;
-  padding: 7rem 30px 7rem 30px;
+  padding: 7rem 30px 3rem 30px;
   text-align: center;
   border-top-left-radius: 100px;
-  position: relative;
-  top: -100px;
   background-image: url('./assets/mobile/backgroundform.png');
   background-repeat: no-repeat;
   background-size: auto 95%;
   background-position: right top;
-  box-shadow: 0 100px 0 #6070ff;
+  box-shadow: #fff -100px 0 0;
 }
 
 .form-title,
@@ -402,6 +396,8 @@ header {
     align-items: center;
     justify-content: space-between;
     transition: box-shadow 0.2s;
+    width: 80%;
+    justify-self: center;
   }
 
   .card:hover {
@@ -460,5 +456,9 @@ header {
   .contact-form {
     max-width: 666px;
     margin: 0 auto;
+  }
+
+  .contact-submit {
+    align-self: center;
   }
 }
