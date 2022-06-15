@@ -398,6 +398,8 @@ header {
     align-items: center;
     justify-content: space-between;
     transition: box-shadow 0.2s;
+    max-width: 1156px;
+    justify-self: center;
   }
 
   .card:hover {
