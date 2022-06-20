@@ -5,20 +5,20 @@ const header = document.getElementById('toolbar');
 const menuItems = document.querySelectorAll('.nav-links');
 
 const toolbarStyle = () => {
-    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) header.classList.add('header-bg');
-    else header.classList.remove('header-bg');
-}
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) header.classList.add('header-bg');
+  else header.classList.remove('header-bg');
+};
 const closeMenu = () => {
-    linksContainer.classList.remove('show-container');
-}
+  linksContainer.classList.remove('show-container');
+};
 const openMenu = () => {
-    linksContainer.classList.add('show-container');
-}
+  linksContainer.classList.add('show-container');
+};
 
 btnClose.addEventListener('click', closeMenu);
 btnOpen.addEventListener('click', openMenu);
-menuItems.forEach(item => {
-    item.addEventListener('click', closeMenu);
+menuItems.forEach((item) => {
+  item.addEventListener('click', closeMenu);
 });
 
 window.onscroll = toolbarStyle;
