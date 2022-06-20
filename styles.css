@@ -2,6 +2,7 @@
 
 html {
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -99,7 +100,7 @@ header {
   display: flex;
   flex-direction: column;
 
-  transition: left 0.5s ease-out;
+  transition: left 0.4s ease-out;
 }
 
 .close-btn {
