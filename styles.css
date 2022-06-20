@@ -62,17 +62,23 @@ header a {
 }
 
 header {
-  height: 3em;
+  height: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: 0;
   top: 0;
   padding: 0 30px;
   box-sizing: border-box;
   font-size: 24px;
+  transition: background-color 0.15s ease-in, box-shadow 0.15s ease-in;
+}
+
+.header-bg {
+  background-color: #fff;
+  box-shadow: 0 0 5px 5px #00000010;
 }
 
 .logo {
@@ -93,12 +99,12 @@ header {
   display: flex;
   flex-direction: column;
 
-  transition: left 0.5s ease;
+  transition: left 0.5s ease-out;
 }
 
 .close-btn {
   align-self: flex-end;
-  margin: 18px 18px;
+  margin: 8px 25px;
   padding: 0 1rem;
   font-size: 1.5rem;
 }
@@ -126,8 +132,9 @@ header {
 .nav-links {
   color: #344563;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.8rem;
   margin-left: 2em;
+  text-decoration: none;
 }
 
 .nav-links:hover {
@@ -179,8 +186,7 @@ header {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   row-gap: 5em;
-  padding: 0 30px;
-  margin: 7em 0;
+  padding: 7em 30px;
 }
 
 .card {
@@ -395,20 +401,42 @@ header {
 }
 
 @media (min-width: 768px) {
+  header {
+    padding: 0 10%;
+  }
 
   .links-container {
-    background-color: unset;
-    position: static;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
     width: unset;
-    height: unset;
+    backdrop-filter: unset;
+    flex-direction: row;
+    height: 3rem;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   .menu-icon {
     display: none;
   }
 
+  .close-btn {
+    display: none;
+  }
+
   .menu-item {
     display: inline;
+  }
+
+  .nav-links {
+    margin-left: 0;
+    margin-right: 3em;
+  }
+
+  .menu-item:last-child .nav-links {
+    margin-right: 10vw;
   }
 
   .headline {
@@ -491,5 +519,11 @@ header {
 
   .contact-submit {
     align-self: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 24px;
   }
 }
