@@ -154,7 +154,7 @@ header {
   min-height: 100vh;
   padding: 0 30px;
   background-color: #fff;
-  background-image: url('./assets/mobile/header-shapes-mobile.png');
+  background-image: url('../assets/mobile/header-shapes-mobile.png');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center 3em;
@@ -343,7 +343,7 @@ header {
   padding: 7rem 30px 3rem 30px;
   text-align: center;
   border-top-left-radius: 100px;
-  background-image: url('./assets/mobile/backgroundform.png');
+  background-image: url('../assets/mobile/backgroundform.png');
   background-repeat: no-repeat;
   background-size: auto 95%;
   background-position: right top;
@@ -449,7 +449,7 @@ header {
   }
 
   .headline {
-    background-image: url('./assets/desktop/header_bg@2x.png');
+    background-image: url('../assets/desktop/header_bg@2x.png');
     background-size: contain;
     background-position: center;
     justify-content: flex-end;
@@ -511,7 +511,7 @@ header {
   }
 
   .contact {
-    background-image: url('./assets/desktop/contact_form_shapes@2x.png');
+    background-image: url('../assets/desktop/contact_form_shapes@2x.png');
     background-size: contain;
     background-position: center;
   }
