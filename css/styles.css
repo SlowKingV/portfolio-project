@@ -234,6 +234,7 @@ header {
   list-style: none;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   font-size: 0.75em;
   font-weight: 500;
   color: #6070ff;
@@ -243,7 +244,7 @@ header {
   padding: 0.2em 0.8em;
   background-color: #ebebff;
   border-radius: 0.5em;
-  margin-right: 0.5em;
+  margin: 0.25em 0.5em 0.25em 0;
 }
 
 .btn-more {
