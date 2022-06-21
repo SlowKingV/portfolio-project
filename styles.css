@@ -2,6 +2,7 @@
 
 html {
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -62,23 +63,54 @@ header a {
 }
 
 header {
-  height: 3em;
+  height: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: 0;
   top: 0;
   padding: 0 30px;
   box-sizing: border-box;
   font-size: 24px;
+  transition: background-color 0.15s ease-in, box-shadow 0.15s ease-in;
+}
+
+.header-bg {
+  background-color: #fff;
+  box-shadow: 0 0 5px 5px #00000010;
 }
 
 .logo {
   display: block;
   font-size: 1rem;
   animation: rotate 2s;
+}
+
+.links-container {
+  background-color: #001aff96;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 100%;
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  transition: left 0.4s ease-out;
+}
+
+.close-btn {
+  align-self: flex-end;
+  margin: 8px 25px;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.show-container {
+  left: 0;
 }
 
 .menu-icon {
@@ -88,6 +120,7 @@ header {
   flex-direction: column;
   justify-content: space-around;
   cursor: pointer;
+  padding: 0.5rem;
 }
 
 .menu-icon > div {
@@ -97,14 +130,15 @@ header {
 }
 
 .menu-item {
-  display: none;
+  padding: 0.8em 0;
 }
 
 .nav-links {
-  color: #344563;
-  font-weight: 500;
-  font-size: 15px;
-  margin-left: 2em;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-left: 30px;
+  text-decoration: none;
 }
 
 .nav-links:hover {
@@ -156,8 +190,7 @@ header {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   row-gap: 5em;
-  padding: 0 30px;
-  margin: 7em 0;
+  padding: 7em 30px;
 }
 
 .card {
@@ -372,12 +405,45 @@ header {
 }
 
 @media (min-width: 768px) {
+  header {
+    padding: 0 10%;
+  }
+
+  .links-container {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: unset;
+    backdrop-filter: unset;
+    flex-direction: row;
+    height: 3rem;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
   .menu-icon {
+    display: none;
+  }
+
+  .close-btn {
     display: none;
   }
 
   .menu-item {
     display: inline;
+  }
+
+  .nav-links {
+    margin-left: 0;
+    margin-right: 3em;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #344563;
+  }
+
+  .menu-item:last-child .nav-links {
+    margin-right: 10vw;
   }
 
   .headline {
@@ -460,5 +526,11 @@ header {
 
   .contact-submit {
     align-self: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 24px;
   }
 }

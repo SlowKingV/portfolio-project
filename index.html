@@ -10,21 +10,22 @@
 </head>
 
 <body>
-  <header>
+  <header id="toolbar">
     <span class="logo"><a href="index.html" class="no-decoration">My Logo</a></span>
-    <nav>
-      <ul class="no-list">
-        <li class="menu-icon">
-          <div></div>
-          <div></div>
-          <div></div>
-        </li>
-        <li class="menu-item"><a href="#works" class="nav-links">Portfolio</a></li>
-        <li class="menu-item"><a href="#about-myself" class="nav-links">About</a></li>
-        <li class="menu-item"><a href="#contact" class="nav-links">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="menu-icon" id="nav-open">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </header>
+  <nav>
+    <ul class="links-container no-list">
+      <li class="close-btn" id="nav-close"><i class="fa-solid fa-xmark"></i></li>
+      <li class="menu-item"><a href="#works" class="nav-links">Portfolio</a></li>
+      <li class="menu-item"><a href="#about-myself" class="nav-links">About</a></li>
+      <li class="menu-item"><a href="#contact" class="nav-links">Contact</a></li>
+    </ul>
+  </nav>
 
   <main>
     <section class="headline">
@@ -208,6 +209,9 @@
       </form>
     </section>
   </main>
+
+  <script src="./mobile_menu.js"></script>
+
 </body>
 
 </html>
