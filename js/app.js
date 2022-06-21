@@ -31,3 +31,37 @@ for (let item in closeMenuItems) {
 /* Toolbar update */
 window.onscroll = toolbarStyle;
 window.onload = toolbarStyle;
+
+/* WORKS SECTION POPULATE */
+
+
+const createHtmlCard = (data) => {
+  let infoElements = '';
+  let tagElements = '';
+
+  data.info.forEach((value) => {
+    infoElements = infoElements.concat(`      <li class="info-item">${value}</li><li class="dot"></li>\n`);
+  });
+  data.tags.forEach((value) => {
+    tagElements = tagElements.concat(`      <li>${value}</li>\n`)
+  });
+
+  let htmlTemplate = `
+<section class="card">
+  <a href="#"><img src="assets/work_${data.index}.png" alt="Preview of the project ${data.name}"></a>
+  <div class="card-content">
+    <h2>${data.name}</h2>
+    <ul class="info">
+${infoElements}
+    </ul>
+    <p class="description">${data.description}</p>
+    <ul class="tags">
+${tagElements}
+    </ul>
+    <button type="button" class="btn-more">See Project</button>
+  </div>
+</section>
+`;
+
+  return htmlTemplate;
+}
