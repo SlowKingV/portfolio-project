@@ -89,8 +89,7 @@ header {
 }
 
 .links-container {
-  background-color: #6070ff;
-  mix-blend-mode: multiply;
+  background-color: #001aff96;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -130,11 +129,19 @@ header {
   background-color: #6070ff;
 }
 
+.close-btn {
+  color: #fff;
+}
+
+.menu-item {
+  padding: 0.8em 0;
+}
+
 .nav-links {
   color: #fff;
-  font-weight: 700;
-  font-size: 2rem;
-  margin-left: 2em;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-left: 30px;
   text-decoration: none;
 }
 
@@ -434,6 +441,9 @@ header {
   .nav-links {
     margin-left: 0;
     margin-right: 3em;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #344563;
   }
 
   .menu-item:last-child .nav-links {
