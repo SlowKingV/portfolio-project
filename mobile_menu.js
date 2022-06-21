@@ -1,9 +1,16 @@
-const btnClose = document.getElementById('nav-close');
+/* Define elements needed for interaction */
 const btnOpen = document.getElementById('nav-open');
 const linksContainer = document.querySelector('.links-container');
 const header = document.getElementById('toolbar');
-const menuItems = document.querySelectorAll('.nav-links');
 
+const closeMenuItems = {} //Store elements that will close menu on click
+closeMenuItems.btnClose = document.getElementById('nav-close');
+closeMenuItems.linksContainer = linksContainer;
+document.querySelectorAll('.nav-links').forEach((item, index) => {
+  closeMenuItems[`navLink${index}`] = item;
+});
+
+/* Page interaction functions */
 const toolbarStyle = () => {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) header.classList.add('header-bg');
   else header.classList.remove('header-bg');
@@ -15,11 +22,12 @@ const openMenu = () => {
   linksContainer.classList.add('show-container');
 };
 
-btnClose.addEventListener('click', closeMenu);
+/* Add listener to elements */
 btnOpen.addEventListener('click', openMenu);
-menuItems.forEach((item) => {
-  item.addEventListener('click', closeMenu);
-});
+for (let item in closeMenuItems) {
+  closeMenuItems[item].addEventListener('click', closeMenu);
+}
 
+/* Toolbar update */
 window.onscroll = toolbarStyle;
 window.onload = toolbarStyle;
