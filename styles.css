@@ -98,7 +98,6 @@ header {
   backdrop-filter: blur(6px);
   display: flex;
   flex-direction: column;
-
   transition: left 0.4s ease-out;
 }
 
@@ -107,6 +106,7 @@ header {
   margin: 8px 25px;
   padding: 0 1rem;
   font-size: 1.5rem;
+  color: #fff;
 }
 
 .show-container {
@@ -127,10 +127,6 @@ header {
   height: 3px;
   border-radius: 2px;
   background-color: #6070ff;
-}
-
-.close-btn {
-  color: #fff;
 }
 
 .menu-item {
