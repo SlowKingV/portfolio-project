@@ -36,6 +36,15 @@ header a {
   color: #6070ff;
 }
 
+/* .stop-scroll {
+  height: 100%;
+  overflow: hidden;
+} */
+
+.d-none {
+  display: none !important;
+}
+
 .no-list {
   padding: 0;
   margin: 0;
@@ -392,34 +401,45 @@ main {
   border: 2px solid #6070ff;
 }
 
-.project-wrapper {
-  background-color: rgba(0, 0, 0, 0.219);
+#project-wrapper {
+  background-color: #0000004d;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
   position: fixed;
   z-index: 120;
-  display: flex;
   justify-content: center;
   align-items: flex-start;
   font-size: 16px;
   overflow-y: scroll;
   padding: 1em 0;
   box-sizing: border-box;
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+#project-wrapper.active {
+  opacity: 1;
+}
+
+#project-wrapper::-webkit-scrollbar {
   display: none;
 }
 
-.project-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-#project-details {
+.project-details {
   width: 90%;
   background-color: #fff;
   padding: 1em;
   box-sizing: border-box;
   border-radius: 20px;
+  transform: translateY(100px);
+  transition: transform 0.3s ease-out;
+}
+
+#project-wrapper.active .project-details {
+  transform: translateY(0);
 }
 
 .project-header {
@@ -431,11 +451,15 @@ main {
 .project-header .fa-solid {
   font-size: 1.4em;
   margin-right: 0.2em;
-  padding: 0 0.3em;
+  padding: 0.3em 0.6em;
   color: #67798e;
 }
 
-#project-details .dot {
+#project-close {
+  cursor: pointer;
+}
+
+.project-details .dot {
   margin: 0 0.8em;
 }
 
@@ -447,7 +471,7 @@ main {
   border-radius: 1em;
 }
 
-#project-details .tags {
+.project-details .tags {
   margin-bottom: 0;
   padding-bottom: 1.2em;
   border-bottom: 1px solid #dfe1e6;
@@ -456,14 +480,13 @@ main {
 .project-btns {
   display: flex;
   justify-content: center;
+  margin-top: 1.2em;
 }
 
-#project-details .btn-more {
-  margin-top: 1.2em;
+.project-details .btn-more {
+  margin: 0.3em;
   text-decoration: none;
   display: inline-block;
-  margin-left: 0.3em;
-  margin-right: 0.3em;
 }
 
 @keyframes rotate {
@@ -608,17 +631,17 @@ main {
     align-self: center;
   }
 
-  #project-details {
+  .project-details {
     width: 80%;
     max-width: 1024px;
     padding: 1em 2em;
   }
 
-  #project-details .no-margin {
+  .project-details .no-margin {
     margin: 0;
   }
 
-  #project-details .info {
+  .project-details .info {
     margin-top: 0;
     margin-bottom: 2em;
     font-size: 1em;
@@ -634,7 +657,7 @@ main {
     margin-left: 1em;
   }
 
-  #project-details .tags {
+  .project-details .tags {
     font-size: 0.85em;
   }
 }
