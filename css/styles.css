@@ -102,6 +102,10 @@ header {
   z-index: 110;
 }
 
+.links-container.active {
+  left: 0;
+}
+
 .close-btn {
   align-self: flex-end;
   margin: 8px 25px;
@@ -110,9 +114,6 @@ header {
   color: #fff;
 }
 
-.show-container {
-  left: 0;
-}
 
 .menu-icon {
   width: 1em;
@@ -193,7 +194,6 @@ main {
 
 .works {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
   row-gap: 5em;
   padding: 7em 30px;
 }
