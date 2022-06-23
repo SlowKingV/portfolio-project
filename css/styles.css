@@ -2,7 +2,6 @@
 
 html {
   font-size: 18px;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -40,6 +39,10 @@ header a {
   height: 100%;
   overflow: hidden;
 } */
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
 
 .d-none {
   display: none !important;
@@ -401,7 +404,8 @@ main {
 }
 
 #project-wrapper {
-  background-color: #0000004d;
+  background-color: #5c626862;
+  backdrop-filter: blur(10px);
   width: 100vw;
   height: 100vh;
   top: 0;

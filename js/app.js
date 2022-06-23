@@ -152,7 +152,25 @@ const insertProjectData = (data) => {
   tags.innerHTML = tagElements;
 };
 
+const disableScroll = () => {
+  // Get the current page scroll position
+  document.documentElement.classList.remove('smooth-scroll');
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  // if any scroll is attempted, set this to the previous value
+  window.onscroll = () => {
+    window.scrollTo(0, scrollTop);
+  };
+};
+
+const enableScroll = () => {
+  document.documentElement.classList.add('smooth-scroll');
+
+  window.onscroll = toolbarStyle;
+};
+
 const openProject = (event) => {
+  disableScroll();
   insertProjectData(data[event.currentTarget.dataset.index - 1]);
   modalPopup.classList.remove('d-none');
   modalPopup.scrollTop = 0;
@@ -165,6 +183,7 @@ seeMoreBtns.forEach((button) => {
 
 const projectCloseBtn = document.getElementById('project-close');
 const closeProject = (event) => {
+  enableScroll();
   if (event.target !== event.currentTarget) return;
   modalPopup.classList.remove('active');
   setTimeout(() => { modalPopup.classList.add('d-none'); }, 300);
