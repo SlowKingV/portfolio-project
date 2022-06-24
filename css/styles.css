@@ -439,11 +439,11 @@ main {
   display: inline-block;
   position: relative;
   left: -7px;
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent; 
-  border-right:7px solid #fff;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid #fff;
 }
 
 .warning-msg .fa-solid {
