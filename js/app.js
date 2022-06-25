@@ -41,32 +41,40 @@ const data = [
     index: 1,
     name: 'Tonic',
     info: ['CANOPY', 'Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    details: "A daily selection of privately personalized reads; no accounts or sign-ups required. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    details:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     tags: ['html', 'css', 'javaScript'],
   },
   {
     index: 2,
     name: 'Multi-Post Stories',
     info: ['FACEBOOK', 'Full Stack Dev', '2015'],
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    details: "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    description:
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    details:
+      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     tags: ['html', 'Ruby on rails', 'css', 'javaScript'],
   },
   {
     index: 3,
     name: 'Facebook 360',
     info: ['FACEBOOK', 'Full Stack Dev', '2015'],
-    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    details: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    description:
+      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    details:
+      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     tags: ['html', 'Ruby on rails', 'css', 'javaScript'],
   },
   {
     index: 4,
     name: 'Uber Navigation',
     info: ['Uber', 'Lead Developer', '2018'],
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    details: "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    description:
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    details:
+      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     tags: ['html', 'Ruby on rails', 'css', 'javaScript'],
   },
   {
@@ -74,7 +82,8 @@ const data = [
     name: 'Test Project Card',
     info: ['Enterprise', 'Lead Developer', '2022'],
     description: 'Test description for this project card.',
-    details: "Test description for this project card. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    details:
+      "Test description for this project card. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     tags: ['html', 'Ruby on rails', 'css', 'javaScript', 'Python'],
   },
 ];
@@ -86,7 +95,9 @@ const createHtmlCard = (cardData) => {
 
   cardData.info.forEach((value, index) => {
     if (index > 0) infoElements = infoElements.concat('<li class="dot"></li>\n');
-    infoElements = infoElements.concat(`      <li class="info-item">${value}</li>`);
+    infoElements = infoElements.concat(
+      `      <li class="info-item">${value}</li>`,
+    );
   });
   cardData.tags.forEach((value) => {
     tagElements = tagElements.concat(`      <li>${value}</li>\n`);
@@ -123,8 +134,9 @@ worksSection.innerHTML = workSectionHtml;
 
 // MODAL WINDOW
 
-const seeMoreBtns = Array.from(document.getElementsByClassName('card-btn'))
-  .concat(Array.from(document.getElementsByClassName('card-img-link')));
+const seeMoreBtns = Array.from(
+  document.getElementsByClassName('card-btn'),
+).concat(Array.from(document.getElementsByClassName('card-img-link')));
 const modalPopup = document.getElementById('project-wrapper');
 
 const insertProjectData = (data) => {
@@ -174,7 +186,9 @@ const openProject = (event) => {
   insertProjectData(data[event.currentTarget.dataset.index - 1]);
   modalPopup.classList.remove('d-none');
   modalPopup.scrollTop = 0;
-  setTimeout(() => { modalPopup.classList.add('active'); }, 0);
+  setTimeout(() => {
+    modalPopup.classList.add('active');
+  }, 0);
 };
 
 seeMoreBtns.forEach((button) => {
@@ -186,7 +200,9 @@ const closeProject = (event) => {
   enableScroll();
   if (event.target !== event.currentTarget) return;
   modalPopup.classList.remove('active');
-  setTimeout(() => { modalPopup.classList.add('d-none'); }, 300);
+  setTimeout(() => {
+    modalPopup.classList.add('d-none');
+  }, 300);
 };
 
 projectCloseBtn.addEventListener('click', closeProject);
@@ -201,10 +217,14 @@ form.addEventListener('submit', (event) => {
   if (formEmail.value.match(/[A-Z]/)) {
     event.preventDefault();
     formWarningMsg.classList.remove('v-hidden');
-    setTimeout(() => { formWarningMsg.classList.add('active'); }, 0);
+    setTimeout(() => {
+      formWarningMsg.classList.add('active');
+    }, 0);
     setTimeout(() => {
       formWarningMsg.classList.remove('active');
-      setTimeout(() => { formWarningMsg.classList.add('v-hidden'); }, 300);
+      setTimeout(() => {
+        formWarningMsg.classList.add('v-hidden');
+      }, 300);
     }, 4000);
   }
 });
@@ -215,52 +235,60 @@ formElements.pop();
 
 // CHECK FOR LOCAL STORAGE AVAILABILITY
 const storageAvailable = (type) => {
-  var storage;
+  let storage;
   try {
     storage = window[type];
-    var x = '__storage_test__';
+    const x = '__storage_test__';
     storage.setItem(x, x);
     storage.removeItem(x);
     return true;
-  }
-  catch (e) {
-    return e instanceof DOMException && (
+  } catch (e) {
+    return (
+      e instanceof DOMException
       // everything except Firefox
-      e.code === 22 ||
-      // Firefox
-      e.code === 1014 ||
-      // test name field too, because code might not be present
-      // everything except Firefox
-      e.name === 'QuotaExceededError' ||
-      // Firefox
-      e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+      && (e.code === 22
+        // Firefox
+        || e.code === 1014
+        // test name field too, because code might not be present
+        // everything except Firefox
+        || e.name === 'QuotaExceededError'
+        // Firefox
+        || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
       // acknowledge QuotaExceededError only if there's something already stored
-      (storage && storage.length !== 0);
+      && storage
+      && storage.length !== 0
+    );
   }
-}
+};
 
 const setValues = () => {
   formElements.forEach((element) => {
     element.value = localStorage.getItem(element.name);
   });
-}
+};
 
 const addToStorage = (element) => {
   localStorage.setItem(element.name, element.value);
-}
+};
 
 const populateStorage = () => {
-  formElements.forEach((element) => { addToStorage(element); });
+  formElements.forEach((element) => {
+    addToStorage(element);
+  });
 
   setValues();
-}
+};
 
-if(localStorage.length < 3) {
-  populateStorage();
-} else {
-  setValues();
-}
+if (storageAvailable()) {
+  if (localStorage.length < 3) {
+    populateStorage();
+  } else {
+    setValues();
+  }
 
-formElements.forEach((element) => {
-  element.addEventListener('change', (event) => { addToStorage(event.currentTarget); });
-});
+  formElements.forEach((element) => {
+    element.addEventListener('change', (event) => {
+      addToStorage(event.currentTarget);
+    });
+  });
+}
