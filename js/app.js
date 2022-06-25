@@ -214,7 +214,7 @@ const formEmail = form.elements.email;
 const formWarningMsg = document.querySelector('.warning-msg');
 
 form.addEventListener('submit', (event) => {
-  if (formEmail.value.match(/[A-Z]/)) {
+  if (formEmail.value.match(/[\w]/)) {
     event.preventDefault();
     formWarningMsg.classList.remove('v-hidden');
     setTimeout(() => {
