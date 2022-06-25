@@ -101,7 +101,7 @@ header {
 .logo {
   display: block;
   font-size: 1rem;
-  animation: rotate 2s;
+  animation: drop 0.8s ease-in-out;
 }
 
 .links-container {
@@ -540,13 +540,17 @@ main {
   display: inline-block;
 }
 
-@keyframes rotate {
+@keyframes drop {
   from {
-    transform: rotate(0deg);
+    transform: translateY(-200%);
+  }
+
+  80% {
+    transform: translateY(20%);
   }
 
   to {
-    transform: rotate(360deg);
+    transform: translateY(0);
   }
 }
 
