@@ -191,3 +191,20 @@ const closeProject = (event) => {
 
 projectCloseBtn.addEventListener('click', closeProject);
 modalPopup.addEventListener('click', closeProject);
+
+// FORM VALIDATION
+const form = document.querySelector('.contact-form');
+const formEmail = form.elements.email;
+const formWarningMsg = document.querySelector('.warning-msg');
+
+form.addEventListener('submit', (event) => {
+  if (formEmail.value.match(/[A-Z]/)) {
+    event.preventDefault();
+    formWarningMsg.classList.remove('v-hidden');
+    setTimeout(() => { formWarningMsg.classList.add('active'); }, 0);
+    setTimeout(() => {
+      formWarningMsg.classList.remove('active');
+      setTimeout(() => { formWarningMsg.classList.add('v-hidden'); }, 300);
+    }, 4000);
+  }
+});

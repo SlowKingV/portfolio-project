@@ -123,7 +123,10 @@
         <input class="input" name="name" type="text" maxlength="30" placeholder="Write your name" required/>
         <input class="input" name="email" type="email" placeholder="Write your email" required/>
         <textarea class="input" name="message-box" id="message" cols="30" rows="10" maxlength="500" placeholder="Write your message here" required></textarea>
-        <button class="contact-submit input" type="submit">Get In Touch</button>
+        <div class="contact-btn-wrap">
+          <button class="contact-submit input" type="submit">Get In Touch</button>
+          <div class="warning-msg v-hidden"><i class="fa-solid fa-triangle-exclamation"></i>Only lowercase characters allowed on the email textfield</div>
+        </div>
       </form>
     </section>
   </main>
@@ -131,18 +134,18 @@
   <div id="project-wrapper" class="d-none">
     <div class="project-details">
       <div class="project-header">
-        <h2 class="no-margin" id="project-name"></h2>
+        <h2 class="no-margin" id="project-name">Placeholder Title</h2>
         <i id="project-close" class="fa-solid fa-xmark"></i>
       </div>
       <ul class="info" id="project-info">
-
+        <li class="info-item">Placeholder Info</li>
       </ul>
-      <img class="project-img" id="project-img" src="placeholder" alt="">
+      <img class="project-img" id="project-img" src="./assets/work_1.png" alt="placeholder alternative text">
       <div class="project-info">
-        <p class="description" id="project-details"></p>
+        <p class="description" id="project-details">Placeholder details</p>
         <div class="project-links">
           <ul class="tags" id="project-tags">
-            
+            <li>Placeholder Tags</li>
           </ul>
           <div class="project-btns">
             <a href="javascript:void(0)" class="btn-more">See Live <i class="fa-solid fa-up-right-from-square"></i></a>
