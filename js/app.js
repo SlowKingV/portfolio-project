@@ -208,3 +208,59 @@ form.addEventListener('submit', (event) => {
     }, 4000);
   }
 });
+
+// LOCAL STORAGE
+const formElements = Array.from(form.elements);
+formElements.pop();
+
+// CHECK FOR LOCAL STORAGE AVAILABILITY
+const storageAvailable = (type) => {
+  var storage;
+  try {
+    storage = window[type];
+    var x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  }
+  catch (e) {
+    return e instanceof DOMException && (
+      // everything except Firefox
+      e.code === 22 ||
+      // Firefox
+      e.code === 1014 ||
+      // test name field too, because code might not be present
+      // everything except Firefox
+      e.name === 'QuotaExceededError' ||
+      // Firefox
+      e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+      // acknowledge QuotaExceededError only if there's something already stored
+      (storage && storage.length !== 0);
+  }
+}
+
+const setValues = () => {
+  formElements.forEach((element) => {
+    element.value = localStorage.getItem(element.name);
+  });
+}
+
+const addToStorage = (element) => {
+  localStorage.setItem(element.name, element.value);
+}
+
+const populateStorage = () => {
+  formElements.forEach((element) => { addToStorage(element); });
+
+  setValues();
+}
+
+if(localStorage.length < 3) {
+  populateStorage();
+} else {
+  setValues();
+}
+
+formElements.forEach((element) => {
+  element.addEventListener('change', (event) => { addToStorage(event.currentTarget); });
+});
